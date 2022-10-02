@@ -1,0 +1,392 @@
+/* Header content */
+header {
+    float: left;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../photos/bg-masthead.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+nav {
+    float: left;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(62, 66, 58);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header nav .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+header nav .navbar a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-family: 'Merriweather Sans';
+    font-weight: bold;
+
+    transition: 1s;
+}
+
+header nav .navbar a:hover {
+    color: white;
+}
+
+header nav .navbar ul li {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 70vh;
+    margin-top: 200px;
+}
+
+.header-center div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 10vh;
+    margin-top: 10px;
+}
+
+.header-center div h1 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: .5px;
+}
+
+.header-center div hr {
+    border: 2px solid #f4623a;
+    width: 10%;
+    margin-top: 30px;
+}
+
+.header-center div p {
+    color: rgb(190, 189, 189);
+    font-size: 20px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.header-center div button {
+    background-color: #f4623a;
+    color: white;
+    padding: 20px;
+    margin-top: 80px;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid #f4623a;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 1s;
+}
+
+.header-center div button:hover {
+    cursor: pointer;
+    background-color: #d4694b;
+}
+
+/* Main content */
+/* Section about */
+main .about {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color: #f4623a;
+}
+
+main .about .about-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+}
+
+main .about .about-list div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+main .about .about-list div h2 {
+    color: white;
+    font-size: 30px;
+}
+
+main .about .about-list div hr {
+    border: 2px solid white;
+    width: 10%;
+}
+
+main .about .about-list div p {
+    color: rgb(255, 255, 255, 0.8);
+    font-size: 20px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+main .about .about-list div button {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-top: 60px;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid white;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 1s;
+}
+
+main .about .about-list div button:hover {
+    cursor: pointer;
+    background-color: rgb(252, 245, 245);
+}
+
+/* Section services */
+main .service {
+    float: left;
+    width: 100%;
+    height: 95vh;
+}
+
+main .section-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 100px;
+}
+
+main .section-list div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+main .section-list div h2 {
+    color: black;
+}
+
+main .section-list div hr {
+    border: 2px solid #f4623a;
+    width: 10%;
+}
+
+main .service .service-icon {
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+main .service .service-icon div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+}
+
+main .service .service-icon div i {
+    font-size: 50px;
+    color: #d4694b;
+}
+
+main .service .service-icon div h2 {
+    font-size: 36px;
+    letter-spacing: .5px;
+}
+
+main .service .service-icon div p {
+    text-align: justify;
+    text-align: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Section portfolio */
+main .portfo {
+    float: left;
+    width: 100%;
+    height: 115vh;
+    background-color: rgb(33, 37, 41);
+}
+
+main .portfo .portfo-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main .portfo .portfo-img div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    height: 28vh;
+    transition: 1s;
+}
+
+main .portfo .portfo-img div .img-hover {
+    width: 100%;
+    color: white;
+    opacity: 0;
+}
+
+main .portfo .portfo-img div:hover .img-hover {
+    background-color: #f4623a;
+    opacity: 1;
+    cursor: pointer;
+}
+
+main .portfo .portfo-footer {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 40vh;
+}
+
+main .portfo .portfo-footer h2 {
+    color: white;
+    font-size: 36px;
+}
+
+main .portfo .portfo-footer button {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid white;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 1s;
+}
+
+main .portfo .portfo-footer button:hover {
+    cursor: pointer;
+    background-color: rgb(252, 245, 245);
+}
+
+/* Section contact */
+main .contact {
+    float: left;
+    width: 100%;
+    height: 800px;
+}
+
+main .contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 120vh;
+}
+
+main .contact .contact-form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-top: 1%;
+}
+
+main .contact .contact-form div h2 {
+    font-size: 30px;
+    letter-spacing: .5px;
+}
+
+main .contact .contact-form div hr {
+    border: 2px solid #f4623a;
+    width: 10%;
+}
+
+main .contact .contact-form div p {
+    color: rgba(0, 0, 0, 0.8);
+    text-align-last: center;
+}
+
+main .contact .contact-form div input {
+    border: 1px solid gray;
+    outline: none;
+    padding: 10px 80px 10px 5px;
+}
+
+main .contact .contact-form div button {
+    background-color: #f4623a;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #f4623a;
+    border-radius: 30px;
+    padding: 15px 120px;
+    transition: 1s;
+}
+
+main .contact .contact-form div button:hover {
+    background-color: #d4694b;
+    cursor: pointer;
+}
+
+main .contact .contact-form div i {
+    font-size: 36px;
+}
+
+/* Footer content */
+footer {
+    float: left;
+    width: 100%;
+    height: 18vh;
+    background-color: rgb(248, 249, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #6c757d;
+    font-size: 17px;
+    font-family: 'Merriweather';
+    font-weight: lighter;
+}

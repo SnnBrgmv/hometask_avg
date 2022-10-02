@@ -1,0 +1,427 @@
+/* Header content */
+header {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%), url("../photos/bg-masthead.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(33, 33, 22);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar h2 a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+header .navbar ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+    transition: .5s;
+}
+
+header .navbar ul li a:hover {
+    color: white;
+}
+
+header .grayscale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+header .grayscale h1 {
+    font-size: 88px;
+    letter-spacing: 20px;
+    font-family: 'Varela Round';
+    font-weight: 500;
+    line-height: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+header .grayscale p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    letter-spacing: .5px;
+    text-align-last: center;
+}
+
+header .grayscale button {
+    background-color: #50817e;
+    border: 1px solid #50817e;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    outline: none;
+    padding: 20px 40px;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+header .grayscale button:hover {
+    background-color: #558985;
+    cursor: pointer;
+}
+
+/* Main content */
+/* Section about */
+main .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+main .about .about-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+main .about .about-part h2 {
+    color: white;
+    letter-spacing: 1px;
+}
+
+main .about .about-part p {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: justify;
+    text-align-last: center;
+    font-size: 18px;
+}
+
+main .about .about-part p a {
+    color: #64a19d;
+}
+
+main .about .about-part p a:hover {
+    color: #50817e;
+}
+
+main .about .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+main .about img {
+    width: 80%;
+}
+
+/* Section project */
+main .project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 160vh;
+}
+
+main .project .mnt-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+main .project .mnt-up div:first-child {
+    width: 45%;
+    height: 45vh;
+    background-image: url(../photos/mountain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+main .project .mnt-up div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 34%;
+    height: 25vh;
+    margin-top: 60px;
+    border-left: 0.5rem solid #64a19d;
+    padding-left: 40px;
+}
+
+main .project .mnt-up h2 {
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+main .project .mnt-up p {
+    text-align: justify;
+    text-align-last: center;
+    color: rgba(0, 0, 0, 0.8) !important;
+    font-size: 18px;
+}
+
+main .project .mnt-down {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    margin-top: 20px;
+}
+
+main .project .mnt-down p {
+    text-align: justify;
+    text-align-last: center;
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+
+main .project .mnt-down div:first-child {
+    display: flex;
+    width: 36%;
+    height: 41vh;
+    background-image: url(../photos/demo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+main .project .mnt-down div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 36%;
+    height: 41vh;
+    background-color: black;
+}
+
+main .project .mnt-down div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    height: 41vh;
+    background-color: black;
+    color: white;
+}
+
+main .project .mnt-down div:last-child {
+    display: flex;
+    width: 36%;
+    height: 41vh;
+    background-image: url(../photos/demo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* Section contact */
+main .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 30%, #000 100%), url("../photos/bg-signup.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+main .contact div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .contact div:first-child i {
+    display: flex;
+    font-size: 40px;
+    color: white;
+    rotate: -55deg;
+}
+
+main .contact div:first-child h2 {
+    display: flex;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+main .contact div:nth-child(2) {
+    display: flex;
+}
+
+main .contact div:nth-child(2) input {
+    display: flex;
+    outline: none;
+    padding: 15px 50px 15px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+main .contact div:nth-child(2) button {
+    display: flex;
+    padding: 15px 30px;
+    color: white;
+    background-color: #64a19d;
+    border: 1px solid #64a19d;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main .contact div:nth-child(3) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin-top: 30px;
+}
+
+main .contact div:nth-child(3) i {
+    display: flex;
+    font-size: 30px;
+    color: #64a19d;
+}
+
+main .contact div:nth-child(3) h5 {
+    display: flex;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+main .contact div:nth-child(3) hr {
+    display: flex;
+    border: .25px solid lightgray;
+    width: 20%;
+}
+
+main .contact div:nth-child(3) p {
+    display: flex;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+main .contact div:nth-child(3) p a {
+
+    color: #64a19d;
+}
+
+main .contact div:nth-child(3) p a:hover {
+    color: #50817e;
+}
+
+main .contact div:nth-child(3) .adres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-top: 50px;
+    border-bottom: 3px solid #64a19d;
+    border-radius: 4px;
+    background-color: white;
+}
+
+main .contact div:nth-child(3) .mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-top: 50px;
+    border-bottom: 3px solid #64a19d;
+    border-radius: 4px;
+    background-color: white;
+}
+
+main .contact div:nth-child(3) .phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-top: 50px;
+    border-bottom: 3px solid #64a19d;
+    border-radius: 4px;
+    background-color: white;
+}
+
+main .contact div:last-child {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+main .contact .icon {
+    font-size: 30px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+main .contact .icon:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer contact */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    line-height: 2px;
+    letter-spacing: .5px;
+}
